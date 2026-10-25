@@ -15,7 +15,7 @@ LOCAL_DIRS = {'.git', 'work', '__pycache__', '.pytest_cache', '.venv'}
 LOCAL_CODEC = 'bridge/jy14_codec_hardened_11_4'
 SUFFIXES = {'.py', '.cpp', '.h', '.json', '.md', '.yaml', '.txt'}
 SPECIAL = {'.gitignore', '.gitattributes', 'NOTICE', 'LICENSE'}
-WORKFLOWS = {'.github/workflows/windows-ffmpeg.yaml'}
+WORKFLOWS = set()  # CI removed 2026-10; any new workflow must be reviewed and listed here
 # User-approved public IG case derivatives. Never turn this into a general
 # media extension allowance: exact bytes, size and path are release-reviewed.
 PUBLIC_MEDIA = {
